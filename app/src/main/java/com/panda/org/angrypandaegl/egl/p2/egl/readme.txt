@@ -1,0 +1,6 @@
+这个elg包下面的类都是为了模仿一个GLSurfaceView类
+其中GLSurfaceView中主要的类和接口: Renderer,GLThread
+有些程序把elg的操作分离出来了,这个不是必要的.
+EGL在这里主要是创建显示,绑定surface和交换数据渲染.
+
+要理解这几个,需要熟读GLSurfaceView源代码
