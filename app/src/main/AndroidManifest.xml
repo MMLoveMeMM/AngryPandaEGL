@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".egl.p1.TextureviewtestActivity" />
-        <activity android:name=".egl.p2.GLTextureActivity"></activity>
+        <activity android:name=".egl.p2.GLTextureActivity" />
+        <activity android:name=".egl.p3.BitmapActivity" />
+        <activity android:name=".egl.p3.PBufferActivity"></activity>
     </application>
 
 </manifest>
