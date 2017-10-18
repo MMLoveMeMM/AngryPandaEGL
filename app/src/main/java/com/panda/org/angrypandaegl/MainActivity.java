@@ -10,6 +10,7 @@ import com.panda.org.angrypandaegl.egl.p1.TextureviewtestActivity;
 import com.panda.org.angrypandaegl.egl.p2.GLTextureActivity;
 import com.panda.org.angrypandaegl.egl.p3.BitmapActivity;
 import com.panda.org.angrypandaegl.egl.p3.PBufferActivity;
+import com.panda.org.angrypandaegl.egl.p4.EglActivity;
 
 public class MainActivity extends Activity {
 
@@ -24,7 +25,7 @@ public class MainActivity extends Activity {
         mStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PBufferActivity.class));
+                startActivity(new Intent(MainActivity.this, EglActivity.class));
             }
         });
 
