@@ -33,7 +33,7 @@ public class TextureviewtestActivity extends Activity implements TextureView.Sur
                                           int height) {
         // TODO Auto-generated method stub
         mRenderer.setViewport(width, height);
-        mProducerThread = new GLProducerThread(surface, mRenderer, new AtomicBoolean(true));
+        mProducerThread = new GLThreadExt(surface, mRenderer, new AtomicBoolean(true));
         mProducerThread.start();
     }
     @Override

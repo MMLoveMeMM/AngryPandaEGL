@@ -12,7 +12,7 @@ import android.opengl.GLUtils;
  * Created by rd0348 on 2017/10/17 0017.
  */
 
-public class GLProducerThread extends Thread {
+public class GLThreadExt extends Thread {
 
     private AtomicBoolean mShouldRender;
     private SurfaceTexture mSurfaceTexture;
@@ -32,7 +32,7 @@ public class GLProducerThread extends Thread {
         public void drawFrame();
     }
 
-    public GLProducerThread(SurfaceTexture surfaceTexture, GLRenderer renderer, AtomicBoolean shouldRender)
+    public GLThreadExt(SurfaceTexture surfaceTexture, GLRenderer renderer, AtomicBoolean shouldRender)
     {
         mSurfaceTexture = surfaceTexture;
         mRenderer = renderer;

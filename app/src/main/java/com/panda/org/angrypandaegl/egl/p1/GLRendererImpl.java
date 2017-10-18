@@ -16,7 +16,7 @@ import com.panda.org.angrypandaegl.R;
  * Created by rd0348 on 2017/10/17 0017.
  */
 
-public class GLRendererImpl implements GLProducerThread.GLRenderer {
+public class GLRendererImpl implements GLThreadExt.GLRenderer {
 
     private int mProgramObject;
     private int mWidth;
