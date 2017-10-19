@@ -58,7 +58,7 @@ public class GLThread extends Thread implements ISurface{
                     surface.eglSurface = EGL14.eglCreateWindowSurface(eglDisplay, eglConfig, surface.surface, attributes, 0);
                     break;
                 }
-                case GLSurface.TYPE_PBUFFER_SURFACE: {
+                case GLSurface.TYPE_PBUFFER_SURFACE: { // 保存在显存中的帧
                     final int[] attributes = {
                             EGL14.EGL_WIDTH, surface.viewport.width,
                             EGL14.EGL_HEIGHT, surface.viewport.height,
@@ -67,7 +67,7 @@ public class GLThread extends Thread implements ISurface{
                     surface.eglSurface = EGL14.eglCreatePbufferSurface(eglDisplay, eglConfig, attributes, 0);
                     break;
                 }
-                case GLSurface.TYPE_PIXMAP_SURFACE: {
+                case GLSurface.TYPE_PIXMAP_SURFACE: { // 保存在系统内存中的位图
                     Log.w(TAG, "nonsupport pixmap surface");
                     return false;
                 }
